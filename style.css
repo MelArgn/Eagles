@@ -1,0 +1,100 @@
+/* Start Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: monospace; */
+}
+
+/* .navbar {
+  background: #88a3fd;
+  color: antiquewhite;
+  position: sticky;
+  top: 0px;
+} */
+
+/* nav {
+  display: flex;
+  margin: auto;
+  padding: 1rem;
+  min-height: 10vh;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+} */
+
+nav {
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+/* .navbar-brand {
+  padding: 2rem;
+} */
+
+nav ul {
+  /* flex: 1 1 40rem; */
+  justify-content: space-evenly;
+
+  /* align-items: center;
+  display: flex;
+  list-style: none; */
+}
+
+/* 
+#logo {
+  flex: 2 1 40rem;
+} */
+
+#home {
+  background: #c9ddff;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+    url("images/eagle.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home h1 {
+  padding: 5rem;
+}
+.home p {
+  font-size: 2rem;
+}
+
+button {
+  /* margin: 20rem; */
+  padding: 1rem 2rem;
+  background: none;
+  border: 0.2rem solid #060d17;
+  color: black;
+  font-size: 1.5rem;
+  border-radius: 1.3rem;
+  transition-property: background-color;
+  transition-duration: 3s;
+}
+
+button:hover {
+  background-color: #935d2f;
+}
+
+#about {
+  background: #c9ddff;
+  height: 80vh;
+}
+
+#properties {
+  background: #c9ddff;
+  height: 80vh;
+}
+#contact {
+  background: #c9ddff;
+  height: 80vh;
+}
