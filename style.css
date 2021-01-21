@@ -77,10 +77,10 @@ a {
   align-items: center;
 }
 
-body {
+/* body {
   font-family: "Ruhl", sans-serif;
   animation: opening 1s ease-in-out;
-}
+} */
 
 h1 {
   font-family: "Vibes", sans-serif;
@@ -108,22 +108,17 @@ button:hover {
   color: white;
   position: sticky;
   top: 0px;
-  z-index: 3;
+  z-index: 2;
 }
 
 nav {
   display: flex;
   margin: auto;
-  padding: 1rem;
+  padding: 2rem 0rem;
   min-height: 10vh;
   align-items: center;
   flex-wrap: wrap;
   width: 90%;
-}
-
-nav {
-  padding: 1rem;
-  font-size: 1.2rem;
 }
 
 nav ul {
@@ -135,7 +130,7 @@ nav ul {
 }
 
 #logo {
-  flex: 2 1 40rem;
+  flex: 1 1 20rem;
 }
 
 #home {
@@ -145,7 +140,7 @@ nav ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 90vh;
+  min-height: 100vh;
   color: white;
   display: flex;
   flex-direction: column;
@@ -153,6 +148,13 @@ nav ul {
   align-items: center;
   text-align: center;
 }
+
+/* Burger section */
+
+/* .burger,
+.menu-check {
+  display: none;
+} */
 
 /* About Section */
 
@@ -188,13 +190,13 @@ nav ul {
   position: relative;
 }
 
-/* .about-image h5 {
-  /* letter-spacing: 2rem;
-  /* position: absolute;
-  top: 20%;
-  left: 50%;
+.about-image h5 {
+  /* letter-spacing: 2rem; */
+  position: absolute;
+  bottom: 5%;
+  left: 45%;
   transform: translate(-50%, -20%);
-} */
+}
 
 .about-image img {
   width: 100%;
@@ -209,4 +211,40 @@ nav ul {
 #contact {
   background: #c9ddff;
   height: 80vh;
+}
+
+/* Footer Section  */
+
+footer {
+  background: var(--background-color);
+  color: white;
+  display: flex;
+  padding: 3rem 5%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+footer h4 {
+  flex: 3 1 40rem;
+  font-size: calc(1.6rem + 1vw);
+  padding: 1rem;
+}
+
+@media screen and (min-width: 1700px) {
+  html {
+    --header1: 3rem;
+    --header2: 4.5rem;
+    --header3: 3.5rem;
+    --header4: 2.5rem;
+    --text: 3rem;
+    --big: 8rem;
+  }
 }
